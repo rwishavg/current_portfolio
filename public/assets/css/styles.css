@@ -462,12 +462,13 @@ img {
   height: 100vh;
   position: absolute;
   padding: 5rem 0 10rem 0;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 .section4-header {
   padding-right: 15%;
-  font-family: "Jura", sans-serif;
+  /* font-family: "Jura", sans-serif;*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   font-weight: 300;
   color: #fff;
@@ -528,7 +529,7 @@ img {
   right: -8px;
   width: 10px;
   height: 10px;
-  background: linear-gradient(-135deg, #c778c2, #4158d0);
+  background: linear-gradient(-135deg, #7bbeca, #1cd698);
   border-radius: 50%;
   box-shadow: 0 0 0 0 3px (233, 33, 99, 0.2);
 }
@@ -539,28 +540,28 @@ img {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: linear-gradient(-135deg, #c850c0, #4148d0);
+  background: linear-gradient(-135deg, #7bbeca, #1cd698);
   border-radius: 50%;
   box-sizing: 0 0 0 3px (233, 33, 99, 0.2);
 }
 .timeline ul li p {
   margin: 10px 0 0;
   padding: 0%;
-  font-family: "Jura", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
 }
 .timeline ul li h3 {
   margin: 10px 0 0;
   padding: 0%;
-  font-family: "Jura", sans-serif;
-  color: rgb(255, 102, 0);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(77, 135, 197);
   font-size: 2rem;
 }
 .timeline ul li .time h4 {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #7bbeca, #71abbd);
 }
 .timeline li:nth-child(odd) .time {
   position: absolute;
@@ -568,7 +569,7 @@ img {
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #7bbeca, #71abbd);
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
@@ -579,7 +580,7 @@ img {
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #7bbeca, #71abbd);
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
@@ -590,7 +591,27 @@ img {
     width: 100%;
   }
 }
+@media (max-width: 450px) {
+  .timeline ul li p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .timeline ul li .time h4 {
+    font-size: 12px;
+  }
+  .timeline ul li h3 {
+      font-size: 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 600;
+    }
+    .section4-header {
+      font-size: 1rem;
+      font-weight: 100;
+    }
+    
+}
 
+/*-------------------------------------------*/
 /* Clouds */
 
 .home .cloud{
