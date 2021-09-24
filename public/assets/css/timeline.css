@@ -47,6 +47,8 @@
   padding: 10px 30px;
   border-radius: 4px;
   background: #eeeeee;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
 }
 .timeline-content::after {
@@ -116,7 +118,7 @@ blockquote {
   background: #FF4081;
   display: inline-block;
   color: #FFFFFF;
-  padding: 10px;
+  padding: 5px;
   position: absolute;
   top: 0;
   right: 0;

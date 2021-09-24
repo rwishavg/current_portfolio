@@ -32,7 +32,7 @@
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
-  --mb-4: 2rem;
+  --mb-4: 1.5rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 }
@@ -53,12 +53,14 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -161,10 +163,11 @@ img {
 }
 @media screen and (max-width: 768px) {
   .nav__menu {
+    border-radius: 15px;
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 50%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
@@ -194,6 +197,7 @@ img {
   color: var(--second-color);
 }
 .nav__toggle {
+  /* margin-right: 5px; */
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
@@ -296,6 +300,10 @@ img {
   margin-bottom: var(--mb-4);
 }
 
+.skills__img{
+  margin-left: 20%;
+  width: 80%;
+}
 .skills__data {
   display: flex;
   justify-content: space-between;
@@ -624,6 +632,12 @@ img {
   }
 }
 @media (max-width: 450px) {
+  html{
+    margin-right: 0;
+  }
+  .skills__img{
+    display: none;
+  }
   .timeline ul li p {
     font-size: 16px;
     font-weight: 600;
