@@ -25,6 +25,23 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "portfolioaniketgautam@gmail.com",
+        Password : "#########",
+        To : 'grwishav34@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Message From Portfolio Website",
+        Body : "Name : " + document.getElementById("name").value
+               + "<br> Email : " + document.getElementById("email").value
+               + "<br> Subject : " + document.getElementById("subject").value
+               + "<br> Message : " + document.getElementById("message").value
+    }).then(
+      message => alert("Message Sent Succesfully!")
+    );
+}
+
 // REMOVING ANIMATION FOR BETTER UX
 
 /*===== SCROLL REVEAL ANIMATION =====*/

@@ -479,11 +479,11 @@
 			<h2 class="section-title">Contact</h2>
 
 			<div class="contact__container bd-grid">
-				<form action="" class="contact__form">
+				<form action="" class="contact__form" onsubmit="sendEmail(); reset() ; return false;">
 					<input type="text" placeholder="Name" class="contact__input" />
 					<input type="mail" placeholder="Email" class="contact__input" />
 					<textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-					<input type="button" value="Submit" class="contact__button button" />
+					<button type="submit" class="contact__button button">Submit</>
 				</form>
 			</div>
 		</section>
@@ -501,10 +501,13 @@
       <p>&#169; 2021 copyright all right reserved</p>
     </footer>
 
-		<!--===== SCROLL REVEAL =====-->
-		<script src="https://unpkg.com/scrollreveal"></script>
+	<!--===== SCROLL REVEAL =====-->
+	<script src="https://unpkg.com/scrollreveal"></script>
 
 	<!--===== MAIN JS =====-->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	
+	<!----======= Contact Client ========-->
 	<script src="assets/js/main.js"></script>
 </body>
 
