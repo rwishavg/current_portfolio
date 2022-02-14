@@ -297,6 +297,7 @@ img {
 }
 .about__img img {
   width: 200px;
+  /* height: 800px; */
   border-radius: 0.5rem;
 }
 
